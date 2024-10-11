@@ -1,0 +1,63 @@
+html {
+    font-size: 16px;
+    /* Define el tamaño de fuente base para todo el documento */
+}
+
+/* Voy a usar media query para hacer adaptable la letra a un dispositivo más pequeño (pantallas de hasta 400px de ancho) */
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 3px; /* Disminuye el tamaño de fuente para pantallas muy pequeñas */
+    }
+}
+
+html, body {
+    height: 100%;
+    /* Establece que el html y el body ocupen el 100% de la altura de la ventana */
+}
+
+body {
+    background: #a6c645;
+    /* Color de fondo verde claro */
+    font-family: "Bebas Neue", sans-serif;
+    /* Define la fuente principal del cuerpo */
+    font-size: 1.7rem;
+    /* Tamaño de fuente grande para el texto en el body */
+    font-style: normal;
+    font-weight: nol; /* Aquí parece haber un error, debe ser "normal" */
+    line-height: 1.882;
+    /* Define el espacio entre las líneas de texto */
+    color: rgb(73, 27, 27);
+    /* Color del texto marrón oscuro */
+    margin: 0;
+    /* Elimina los márgenes del body */
+    padding: 12px;
+    /* Añade un relleno alrededor del contenido del body */
+}
+
+h1, h2, .h1, .h2 {
+    .anton-regular {
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        /* Define un estilo de fuente diferente (Anton) para los títulos h1, h2 y clases .h1, .h2 */
+    }
+}
+
+/* Bordes y estilos generales de la tabla */
+table {
+    border-collapse: collapse;
+    /* Elimina el espacio entre las celdas de la tabla */
+    width: 100%;
+    /* La tabla ocupa el 100% del ancho del contenedor */
+    border: 1px solid rgb(255, 13, 0);
+    /* Bordes de la tabla de color rojo */
+}
+
+table td, table th {
+    border: 1px solid rgb(26, 31, 192);
+    /* Bordes azules para las celdas y los encabezados */
+    padding: 8px;
+    /* Espacio interior (padding) en cada celda */
+    text-align: center;
+    /* Alinea el contenido de las celdas al centro */
+}
